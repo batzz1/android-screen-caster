@@ -45,7 +45,7 @@ Tap **Start mirroring** and accept the screen-capture permission dialog.
 adb install -r auto/build/outputs/apk/debug/app-debug.apk
 ```
 
-This app appears in Android Auto / Desktop Head Unit as a media source ("Screen Caster"). It does **not** mirror the phone screen — Android Auto does not allow that from regular apps.
+This app appears in Android Auto / Desktop Head Unit as a media source ("Screen Caster"). On first launch, it shows a welcome onboarding screen with instructions. It does **not** mirror the phone screen — Android Auto does not allow that from regular apps.
 
 ## Project layout
 

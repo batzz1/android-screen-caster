@@ -4,4 +4,10 @@
     <string name="track_hello">Hello Android Auto</string>
     <string name="track_hello_album">Screen Caster for Auto</string>
     <string name="launch_on_phone">Open on phone</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title">Welcome to Screen Caster</string>
+    <string name="onboarding_body">This app works with Android Auto in your car.\n\nConnect your phone via USB or wireless Android Auto, then look for "Screen Caster" in your car\'s media app list.\n\nNote: This is a media app for Android Auto. It does not mirror your phone screen to the car display.</string>
+    <string name="onboarding_ok">Got it</string>
+    <string name="pref_first_launch">first_launch</string>
 </resources>

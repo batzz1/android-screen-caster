@@ -2,29 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0F0F12"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="32dp">
+
+    <!-- App icon -->
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AutoDemo"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:text="@string/app_name"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Media service registered for Android Auto"
-        android:textSize="16sp"
-        android:paddingTop="8dp" />
-
-    <Button
-        android:id="@+id/btnLaunch"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/launch_on_phone"
-        android:paddingTop="24dp" />
+        android:textSize="16sp"
+        android:textColor="#9AA0A6"
+        android:gravity="center"
+        android:paddingBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnGotIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_ok"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2D8CFF"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp" />
 
 </LinearLayout>
