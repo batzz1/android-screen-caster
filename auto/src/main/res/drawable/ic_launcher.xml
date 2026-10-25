@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:name="icon_group"
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Car head unit screen -->
+        <path
+            android:name="screen"
+            android:pathData="M 16 16 L 92 16 L 92 92 L 16 92 Z"
+            android:fillColor="#2D8CFF"/>
+        <!-- Screen inner -->
+        <path
+            android:name="bevel"
+            android:pathData="M 18 18 L 90 18 L 90 90 L 18 90 Z"
+            android:fillColor="#1A6DD6"/>
+        <!-- Play triangle -->
+        <path
+            android:name="play"
+            android:pathData="M 46 40 L 68 54 L 46 68 Z"
+            android:fillColor="#FFFFFF"/>
+        <!-- Signal waves -->
+        <path
+            android:name="wave1"
+            android:pathData="M 36 76 Q 54 76 54 84 Q 54 76 72 76"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"/>
+        <path
+            android:name="wave2"
+            android:pathData="M 32 82 Q 54 82 54 90 Q 54 82 76 82"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.7"/>
+    </group>
+</vector>

@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidScreenCaster"
 include(":app")
+include(":auto")

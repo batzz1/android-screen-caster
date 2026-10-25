@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Screen Caster</string>
+    <string name="media_root">Screen Caster Media</string>
+    <string name="track_hello">Hello Android Auto</string>
+    <string name="track_hello_album">Screen Caster for Auto</string>
+    <string name="launch_on_phone">Open on phone</string>
+</resources>

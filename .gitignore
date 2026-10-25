@@ -1,21 +1,22 @@
-# Build
-build/
+# Built application files
 *.apk
-*.dex
-*.class
+*.aab
 
-# Android
+# Gradle
 .gradle/
-local.properties
-captures/
-.externalNativeBuild/
-.cxx/
+build/
 
-# IDE
+# Local configuration file
+local.properties
+
+# Android Studio / IntelliJ
 .idea/
 *.iml
-.vscode/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Keystore
+*.jks
+*.keystore

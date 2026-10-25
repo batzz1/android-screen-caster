@@ -1,12 +1,13 @@
-# Android Screen Caster (ScreenMirror)
+# Android Screen Caster
 
-A minimal Android app that captures the device screen using `MediaProjection`
-and displays a live preview inside the app.
+Two modules in one repo:
 
-Package: `io.android.screen.caster`
+| Module | Package | Purpose |
+|--------|---------|---------|
+| `:app` | `io.android.screen.caster` | Phone screen mirror app — captures screen via `MediaProjection` and shows a live preview locally on the phone |
+| `:auto` | `com.example.autocar` | Android Auto media app — registers a `MediaBrowserServiceCompat` so it appears in Android Auto / DHU media apps |
 
-> Note: Android Auto's public SDK does not support arbitrary screen mirroring.
-> This app mirrors the screen locally on the phone and is a foundation only.
+> Note: Android Auto's public SDK does **not** allow arbitrary phone-screen mirroring. `:app` mirrors locally on the phone. `:auto` is a media app for the car interface.
 
 ## Requirements
 
@@ -14,27 +15,42 @@ Package: `io.android.screen.caster`
 - Build-Tools 35.0.0
 - JDK 17+
 
-## Build with Gradle
+## Build both modules
 
 ```sh
 ./gradlew assembleDebug
 ```
 
-Output APK: `app/build/outputs/apk/debug/app-debug.apk`
+Output APKs:
+
+| Module | APK path |
+|--------|----------|
+| `:app` | `app/build/outputs/apk/debug/app-debug.apk` |
+| `:auto` | `auto/build/outputs/apk/debug/app-debug.apk` |
 
 ## Install & run
+
+### Phone screen mirror (`:app`)
 
 ```sh
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb shell am start -n io.android.screen.caster/.MainActivity
 ```
 
-On first launch, tap **Start mirroring** and accept the screen-capture permission dialog.
+Tap **Start mirroring** and accept the screen-capture permission dialog.
+
+### Android Auto media app (`:auto`)
+
+```sh
+adb install -r auto/build/outputs/apk/debug/app-debug.apk
+```
+
+This app appears in Android Auto / Desktop Head Unit as a media source ("Screen Caster"). It does **not** mirror the phone screen — Android Auto does not allow that from regular apps.
 
 ## Project layout
 
 ```
-app/
+app/                          # Phone screen mirror
   build.gradle.kts
   src/main/
     AndroidManifest.xml
@@ -42,6 +58,18 @@ app/
       MainActivity.kt
       CaptureService.kt
     res/
-      layout/activity_main.xml
-      values/strings.xml
+
+auto/                         # Android Auto media app
+  build.gradle.kts
+  src/main/
+    AndroidManifest.xml
+    kotlin/com/example/autocar/
+      MainActivity.kt
+      MyMediaBrowserService.kt
+    res/
+
+build.gradle.kts              # Root build config
+settings.gradle.kts
+gradle.properties
+gradlew / gradlew.bat
 ```
