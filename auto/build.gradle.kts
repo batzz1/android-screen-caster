@@ -31,6 +31,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":app"))
     implementation("androidx.media:media:1.6.0")
 }
