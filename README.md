@@ -13,25 +13,18 @@ Package: `io.android.screen.caster`
 - Android SDK Platform 35 (`android-35`)
 - Build-Tools 35.0.0
 - JDK 17+
-- Android Studio (optional) or Gradle 8.6+
 
 ## Build with Gradle
 
-```bash
+```sh
 ./gradlew assembleDebug
-```
-
-On Windows:
-
-```powershell
-.\gradlew.bat assembleDebug
 ```
 
 Output APK: `app/build/outputs/apk/debug/app-debug.apk`
 
 ## Install & run
 
-```bash
+```sh
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb shell am start -n io.android.screen.caster/.MainActivity
 ```
