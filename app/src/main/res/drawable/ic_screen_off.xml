@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Monitor outline -->
+    <path
+        android:pathData="M 20 14 L 88 14 L 88 78 L 20 78 Z"
+        android:strokeColor="#666666"
+        android:strokeWidth="6"
+        android:fillColor="#00000000"/>
+    <!-- Monitor screen -->
+    <path
+        android:pathData="M 28 22 L 80 22 L 80 70 L 28 70 Z"
+        android:fillColor="#2A2A2E"/>
+    <!-- Stand -->
+    <path
+        android:pathData="M 52 78 L 56 98 L 52 98 L 48 98 L 44 78 Z"
+        android:fillColor="#666666"/>
+    <!-- Off symbol / X -->
+    <path
+        android:pathData="M 44 44 L 64 64 M 64 44 L 44 64"
+        android:strokeColor="#999999"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"/>
+</vector>

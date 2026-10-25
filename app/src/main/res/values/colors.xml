@@ -1,0 +1,7 @@
+<resources>
+    <color name="screen_bg">#0F0F12</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="subtitle_color">#9AA0A6</color>
+    <color name="preview_bg">#1A1A1E</color>
+    <color name="button_color">#2D8CFF</color>
+</resources>

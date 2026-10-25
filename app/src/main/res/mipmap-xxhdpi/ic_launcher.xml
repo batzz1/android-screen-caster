@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:name="screen_group"
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Screen background -->
+        <path
+            android:name="screen"
+            android:pathData="M 14 14 L 94 14 L 94 94 L 14 94 Z"
+            android:fillColor="#2D8CFF"/>
+        <!-- Screen inner bevel -->
+        <path
+            android:name="bevel"
+            android:pathData="M 16 16 L 92 16 L 92 92 L 16 92 Z"
+            android:fillColor="#1A6DD6"/>
+        <!-- Play/cast triangle -->
+        <path
+            android:name="play"
+            android:pathData="M 48 42 L 72 54 L 48 66 Z"
+            android:fillColor="#FFFFFF"/>
+        <!-- Cast waves -->
+        <path
+            android:name="wave1"
+            android:pathData="M 38 78 Q 54 78 54 86 Q 54 78 70 78"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"/>
+        <path
+            android:name="wave2"
+            android:pathData="M 34 84 Q 54 84 54 92 Q 54 84 74 84"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeAlpha="0.7"/>
+    </group>
+</vector>

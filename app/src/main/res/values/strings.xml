@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">ScreenMirror</string>
+    <string name="app_name">Screen Caster</string>
+    <string name="subtitle">Capture and preview your screen</string>
     <string name="start">Start mirroring</string>
     <string name="stop">Stop mirroring</string>
+    <string name="preview_desc">Screen preview area</string>
 </resources>
